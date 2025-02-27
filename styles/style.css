@@ -237,11 +237,13 @@ body {
 	align-items: center;
 	gap: 5px;
 }
-
+.center-body-href{
+	gap: 20px;
+}
 
 
 .center-body-href a{
-	display: flex; 
+	display: inline-flex; 
 	
 	align-items: center;
 	color: black;
