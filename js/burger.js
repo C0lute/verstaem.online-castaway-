@@ -1,6 +1,6 @@
-
- window.onload = function(){ 
-    var flag = 1;
+document.addEventListener("DOMContentLoaded", function(){
+    
+    let flag = 1;
     const nav = document.getElementById("nav");
     const ul = document.getElementById("ul");
     const li = document.getElementsByClassName("header-center");
@@ -13,7 +13,7 @@
             nav.className = "nav";
             ul.className = "ul";
             li.className = "header-center";
-            for(var i=0; i< href.length;i++){
+            for(let i=0; i< href.length;i++){
                 href[i].style.fontSize = "16px";
             }
         }
@@ -28,16 +28,16 @@
 
 
 
-    const b = document.getElementById('elem').addEventListener('click', function(event) {
+    document.getElementById('elem').addEventListener('click', function() {
         if (flag == 1){
             flag = 2;
             nav.className = "nav_burger_delay";
             ul.className = "ul_burger";
-            for(var i=0; i< li.length;i++){
+            for(let i=0; i< li.length;i++){
                 li[i].style.width = "100%";
                 li[i].style.height = "max-content";
             }
-            for(var i=0; i< href.length;i++){
+            for(let i=0; i< href.length;i++){
                 href[i].style.fontSize = "24px";
             }
             
@@ -48,9 +48,9 @@
             nav.className = "nav_burger";
             ul.className = "ul";
             li.className = "header-center";
-            for(var i=0; i< href.length;i++){
+            for(let i=0; i< href.length;i++){
                 href[i].style.fontSize = "16px";
             }
         }
     });
-};
+});

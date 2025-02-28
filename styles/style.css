@@ -4,10 +4,14 @@ margin: 0;
 box-sizing: border-box;
 }
 
-
+body{
+	max-width: 1720px;
+	margin: 0 auto;
+}
 .footer{
 	display: block;
 	padding: 0 0 64px;
+	margin: 0 4%;
 
 
 }
@@ -260,7 +264,7 @@ body {
 	
 }
 
-.center-body-tags a{
+.center-body-tags span{
 	color: black;
 	display: inline;
 	justify-content: start;
